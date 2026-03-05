@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>احجز الآن - Loving Homes</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-paw"></i>
+                <span>Loving Homes</span>
+            </div>
+            <button id="themeToggle" class="btn-dark-mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="services.html">خدماتنا</a></li>
+                <li><a href="pricing.html">الأسعار</a></li>
+                <li><a href="booking.html" class="active">احجز الآن</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-calendar-check"></i> احجز الآن</h1>
+            <p>املأ النموذج وسنتواصل معك لتأكيد الحجز</p>
+        </div>
+    </div>
+
+    <div class="container content">
+        <div class="booking-wrapper">
+            <div class="booking-info">
+                <h3><i class="fas fa-info-circle"></i> معلومات مهمة</h3>
+                
+                <div class="info-box">
+                    <h4><i class="fas fa-phone"></i> للتواصل الفوري</h4>
+                    <p>للاستفسارات أو الحجز السريع:</p>
+                    <a href="tel:+966501234567" class="contact-link">
+                        <i class="fas fa-phone"></i>
+                        966-50-123-4567+
+                    </a>
+                    <a href="https://wa.me/966501234567" class="contact-link whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        واتساب
+                    </a>
+                </div>
+
+                <div class="info-box">
+                    <h4><i class="fas fa-clock"></i> ساعات العمل</h4>
+                    <p>مفتوحون على مدار الساعة<br>7 أيام في الأسبوع</p>
+                </div>
+
+                <div class="packages-summary">
+                    <h4><i class="fas fa-tags"></i> الحزم المتاحة</h4>
+                    <div class="package-summary-item">
+                        <span>حزمة اليوم</span>
+                        <strong>150 ريال/يوم</strong>
+                    </div>
+                    <div class="package-summary-item">
+                        <span>الكلاسيكية</span>
+                        <strong>350 ريال/3 أيام</strong>
+                    </div>
+                    <div class="package-summary-item">
+                        <span>المميزة</span>
+                        <strong>700 ريال/أسبوع</strong>
+                    </div>
+                    <div class="package-summary-item">
+                        <span>مخصصة</span>
+                        <strong>حسب الطلب</strong>
+                    </div>
+                </div>
+            </div>
+
+            <form class="form" id="bookingForm">
+                <h3><i class="fas fa-edit"></i> نموذج الحجز</h3>
+                
+                <div class="form-section">
+                    <h4>معلومات المالك</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="ownerName">
+                                <i class="fas fa-user"></i>
+                                اسم المالك *
+                            </label>
+                            <input type="text" id="ownerName" name="ownerName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i>
+                                رقم الهاتف *
+                            </label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h4>معلومات الكلب</h4>
+                    <div class="form-group">
+                        <label for="petName">
+                            <i class="fas fa-paw"></i>
+                            اسم الكلب *
+                        </label>
+                        <input type="text" id="petName" name="petName" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h4>تفاصيل الحجز</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkIn">
+                                <i class="fas fa-calendar-alt"></i>
+                                تاريخ الدخول *
+                            </label>
+                            <input type="date" id="checkIn" name="checkIn" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkOut">
+                                <i class="fas fa-calendar-check"></i>
+                                تاريخ الخروج *
+                            </label>
+                            <input type="date" id="checkOut" name="checkOut" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="package">
+                            <i class="fas fa-box"></i>
+                            اختر الحزمة *
+                        </label>
+                        <select id="package" name="package" required>
+                            <option value="">اختر الحزمة</option>
+                            <option value="daily">حزمة اليوم - 150 ريال/يوم</option>
+                            <option value="classic">الكلاسيكية - 350 ريال/3 أيام</option>
+                            <option value="premium">المميزة - 700 ريال/أسبوع</option>
+                            <option value="custom">مخصصة - حسب الطلب</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        إرسال طلب الحجز
+                    </button>
+                    <button type="reset" class="btn-secondary">
+                        <i class="fas fa-redo"></i>
+                        إعادة التعبئة
+                    </button>
+                </div>
+
+                <div class="form-note">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>بياناتك آمنة. سنتواصل معك خلال 24 ساعة.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 فندق الحيوانات الأليفة. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
